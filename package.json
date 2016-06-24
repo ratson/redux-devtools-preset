@@ -1,6 +1,6 @@
 {
   "name": "redux-devtools-preset",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opinionated Redux DevTools",
   "main": "lib/index.js",
   "scripts": {
