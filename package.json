@@ -9,10 +9,12 @@
     "lint": "eslint .",
     "prepublish": "npm-run-all clean build"
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
   "dependencies": {
     "fbjs": "^0.8.3",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
     "redux-devtools": "^3.3.1",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.0.11"
@@ -30,6 +32,8 @@
     "eslint-plugin-jsx-a11y": "^1.5.3",
     "eslint-plugin-react": "^5.2.2",
     "npm-run-all": "^2.2.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "rimraf": "^2.5.2"
   },
   "repository": "ratson/redux-devtools-preset",
