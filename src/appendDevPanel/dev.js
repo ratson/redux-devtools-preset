@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import DevTools from './DevTools'
+import DevTools from '../DevTools'
 
 export default ({ rootNode, store }) => {
   const debugNode = document.createElement('DIV')

@@ -1,7 +1,7 @@
 import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment'
 import { persistState } from 'redux-devtools'
 
-import DevTools from './DevTools'
+import DevTools from '../DevTools'
 
 function getDebugSessionKey() {
   if (!canUseDOM) {
