@@ -1,6 +1,6 @@
 {
   "name": "redux-devtools-preset",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Opinionated Redux DevTools",
   "main": "lib/index.js",
   "scripts": {
@@ -41,7 +41,9 @@
     "src"
   ],
   "xo": {
-    "env": ["browser"],
+    "env": [
+      "browser"
+    ],
     "rules": {
       "react/jsx-filename-extension": "off"
     }
