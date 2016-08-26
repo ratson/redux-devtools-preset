@@ -1,5 +1,5 @@
-import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment'
-import { persistState } from 'redux-devtools'
+import {canUseDOM} from 'fbjs/lib/ExecutionEnvironment'
+import {persistState} from 'redux-devtools'
 
 import DevTools from '../DevTools'
 

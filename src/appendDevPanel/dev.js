@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom'
 
 import DevTools from '../DevTools'
 
-export default ({ rootNode, store }) => {
+export default ({rootNode, store}) => {
   const debugNode = document.createElement('DIV')
   rootNode.parentNode.insertBefore(debugNode, rootNode.nextSibling)
-  ReactDOM.render(<DevTools store={store} />, debugNode)
+  ReactDOM.render(<DevTools store={store}/>, debugNode)
 }
