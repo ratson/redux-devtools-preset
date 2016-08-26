@@ -7,7 +7,7 @@
     "build": "babel src --out-dir lib",
     "clean": "rimraf lib dist coverage",
     "test": "csc",
-    "prepublish": "npm-run-all test clean build"
+    "prepublish": "npm-run-all clean build"
   },
   "peerDependencies": {
     "react": "*",
