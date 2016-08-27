@@ -14,13 +14,14 @@ npm install redux-devtools-preset --save
 import React from 'react'
 import ReactDOM from 'react-dom'
 import thunk from 'redux-thunk'
-import { appendDevPanel, devMiddleware } from 'redux-devtools-preset'
-import { createStore, compose } from 'redux'
+import {devMiddleware} from 'redux-devtools-preset'
+import {createStore, compose} from 'redux'
 import rootReducer from '<project-path>/reducers'
 
+const rootNode = document.getElementById('container')
 const store = createStore(rootReducer, undefined, compose(
   applyMiddleware(thunk),
-  ...devMiddleware(),
+  ...devMiddleware({rootNode}),
 ))
 
 const App = () => {
@@ -31,13 +32,11 @@ const App = () => {
   )
 }
 
-const rootNode = document.getElementById('container')
 ReactDOM.render((
   <Provider store={store}>
     <App />
   </Provider>
 ), rootNode)
-appendDevPanel({ rootNode, store })
 ```
 
 Then you can use `Ctrl-h` to toggle the development panel.
